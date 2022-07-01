@@ -4,10 +4,16 @@ body, html {
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 300px 900px;
+  grid-template-rows: 120px 120px 600px 120px;
+  justify-content: center;
+  gap: 15px;
   text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  margin-bottom: 430px;
 }
 
 .container div {
@@ -20,10 +26,12 @@ body, html {
 }
 
 .header {
+  grid-column: 1 / -1;
   background-color: #FFDE22;
 }
 
 .sidebar {
+  grid-row: 2 / 4;
   background-color: #FF7755;
 }
 
@@ -43,5 +51,6 @@ body, html {
 }
 
 .footer {
+  grid-column: 1 / -1;
   background-color: #393f4d;
 }
